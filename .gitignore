@@ -1,10 +1,11 @@
-
+# Eclipse
+/bin/
 .classpath
 .project
 .settings/
+ 
 
-
-
-
+ 
+# Maven
 log/
 target/

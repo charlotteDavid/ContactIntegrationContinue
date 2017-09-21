@@ -44,7 +44,7 @@ public class MockFailTest extends MockTest {
 	
 	}
 	
-	@Test(expected = ContactException.class)
+	@Test
 	public void testCreerContactCasValide() throws ContactException {
 		//Phaze d'enregistrement(Record)
 		String nom ="ContactValide";
@@ -65,7 +65,8 @@ public class MockFailTest extends MockTest {
 		
 		Contact contact = capture.getValue();
 		Assert.assertEquals(contact.getNom(), nom);
-		Assert.assertEquals(nom, tel);
+		Assert.assertEquals(contact.getTel(), tel);
+		
 	
 		
 	}
